@@ -24,6 +24,12 @@ var fizzbuzz = function(countUpTo){
 
   var stringInput = prompt("Please choose a number.");
   var x = +stringInput;
+  if ((typeOf x === 'number') && (x % 1 === 0)) {
+    console.log('Nice!');
+    fizzbuzz(x);
+  } else {
+    console.log('Please choose a bloody number!!!');
+  };
   fizzbuzz(x);
 
 
